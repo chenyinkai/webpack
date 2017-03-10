@@ -1,6 +1,6 @@
 1.mkdir 新建文件夹
 2.npm init
-3.npm install webapck --save-dev
+3.npm install webpack --save-dev
 4.加载css，加载样式需要css-loader和style-loader
 5.npm install css-loader style-loader --save-dev
 方式1：在js文件中，require('style-loader!css-loader!./style.css')。
