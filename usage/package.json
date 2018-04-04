@@ -1,7 +1,7 @@
 {
   "scripts": {
     "build": "webpack --mode production",
-    "start-dev": "webpack-dev-server --mode development"
+    "start-dev": "webpack-dev-server --mode development --watch"
   },
   "devDependencies": {
     "babel-core": "^6.26.0",
@@ -11,6 +11,8 @@
     "clean-webpack-plugin": "^0.1.19",
     "css-loader": "^0.28.11",
     "html-webpack-plugin": "^3.2.0",
+    "less": "^3.0.1",
+    "less-loader": "^4.1.0",
     "style-loader": "^0.20.3",
     "uglifyjs-webpack-plugin": "^1.2.4"
   },

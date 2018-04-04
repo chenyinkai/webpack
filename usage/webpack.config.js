@@ -2,6 +2,11 @@ const webpack = require('webpack')
 const path = require('path')
 const UglifyPlugin = require('uglifyjs-webpack-plugin')
 const cleanPlugin = require('clean-webpack-plugin')
+
+function resolve(dir, filename = '') {
+  return path.join(__dirname, dir, filename)
+}
+
 module.exports = {
   entry: './index.js',
   output: {
@@ -17,6 +22,10 @@ module.exports = {
       {
         test: /\.css/,
         use: ['style-loader', 'css-loader']
+      },
+      {
+        test: /\.less$/,
+        use: ['style-loader', 'css-loader', 'less-loader']
       }
     ]
   },
@@ -26,5 +35,5 @@ module.exports = {
 
     extensions: ['.wasm', '.mjs', '.js', '.json', '.jsx']
   },
-  plugins: [new UglifyPlugin(), new cleanPlugin()]
+  plugins: [new UglifyPlugin(), new cleanPlugin([resolve('dist')])]
 }
