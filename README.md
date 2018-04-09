@@ -2,7 +2,7 @@
 
 ## simple usage
 
-> [https://github.com/chenyinkai/webpack/tree/master/usage](simple usage)
+> [https://github.com/chenyinkai/webpack/tree/master/usage](simpleusage)
 
 ## resolve
 
